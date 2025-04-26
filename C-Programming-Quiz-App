@@ -1,0 +1,115 @@
+#include <stdio.h>
+
+int main() {
+    int score = 0;
+    char answer;
+
+    printf("===========================================\n");
+    printf("          Welcome to Quiz App!\n");
+    printf("===========================================\n");
+    printf("Instructions:\n");
+    printf("- Type A, B, C, or D to answer.\n");
+    printf("- Capital or small letters both are accepted.\n");
+    printf("- Each correct answer gives you 1 point.\n\n");
+
+    // Question 1
+    printf("1) Which programming language is known as the mother of all languages?\n");
+    printf("A) Python\n");
+    printf("B) C\n");
+    printf("C) Java\n");
+    printf("D) JavaScript\n");
+    printf("Enter your answer: ");
+    scanf(" %c", &answer);
+
+    if (answer == 'B' || answer == 'b') {
+        printf("Brilliant! C is the foundation of modern programming!\n\n");
+        score++;
+    } else {
+        printf("Oops! Correct answer is B) C. Don't worry, you're learning like a warrior!\n\n");
+    }
+
+    // Question 2
+    printf("2) What does CPU stand for?\n");
+    printf("A) Central Program Unit\n");
+    printf("B) Central Processing Unit\n");
+    printf("C) Computer Personal Unit\n");
+    printf("D) Central Peripheral Unit\n");
+    printf("Enter your answer: ");
+    scanf(" %c", &answer);
+
+    if (answer == 'B' || answer == 'b') {
+        printf("Superb! You clearly know the heart of the computer!\n\n");
+        score++;
+    } else {
+        printf("Not quite! Correct answer is B) Central Processing Unit. Keep your head high!\n\n");
+    }
+
+    // Question 3
+    printf("3) Who developed the Python programming language?\n");
+    printf("A) James Gosling\n");
+    printf("B) Dennis Ritchie\n");
+    printf("C) Guido van Rossum\n");
+    printf("D) Mark Zuckerberg\n");
+    printf("Enter your answer: ");
+    scanf(" %c", &answer);
+
+    if (answer == 'C' || answer == 'c') {
+        printf("Fantastic! You're coding your way to greatness!\n\n");
+        score++;
+    } else {
+        printf("Almost! Correct answer is C) Guido van Rossum. Legends aren't born in a day!\n\n");
+    }
+
+    // Question 4
+    printf("4) Which of the following is not an operating system?\n");
+    printf("A) Windows\n");
+    printf("B) Linux\n");
+    printf("C) Oracle\n");
+    printf("D) macOS\n");
+    printf("Enter your answer: ");
+    scanf(" %c", &answer);
+
+    if (answer == 'C' || answer == 'c') {
+        printf("Excellent! Oracle is a database, not an OS!\n\n");
+        score++;
+    } else {
+        printf("Good try! Correct answer is C) Oracle. Every mistake is a step forward!\n\n");
+    }
+
+    // Question 5
+    printf("5) Which of the following commands correctly compiles a C program named main.c using gcc?\n");
+    printf("A) gcc main.c -o main\n");
+    printf("B) gcc main.c main.exe\n");
+    printf("C) gcc -run main.c\n");
+    printf("D) gcc -o main.exe main.c\n");
+    printf("Enter your answer: ");
+    scanf(" %c", &answer);
+
+    if (answer == 'A' || answer == 'a') {
+        printf("Woohoo! You're on fire! True compiler wizard!\n\n");
+        score++;
+    } else {
+        printf("Almost there! Correct answer is A) gcc main.c -o main. You'll soon master it!\n\n");
+    }
+
+    // Final Result
+    printf("===========================================\n");
+    printf("             Quiz Completed!\n");
+    printf("===========================================\n");
+    printf("Your final score is: %d out of 5\n", score);
+
+    // Final creative message
+    if (score == 5) {
+        printf("Outstanding! You're a true genius in the making!\n");
+    } else if (score >= 3) {
+        printf("Great job! You are on the path to mastery. Keep pushing forward!\n");
+    } else {
+        printf("Every master was once a beginner. Keep learning, the future is yours!\n");
+    }
+
+    printf("===========================================\n");
+    printf("        Thanks for playing, Champion!\n");
+    printf("===========================================\n");
+
+    return 0;
+}
